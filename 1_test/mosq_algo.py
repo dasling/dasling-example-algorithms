@@ -89,10 +89,10 @@ mqttc.on_publish = on_publish
 mqttc.on_subscribe = on_subscribe
 
 #username_pw_set(self, username, password=None)
-mqttc.username_pw_set("test_username", "test_password")
+mqttc.username_pw_set("test_username", "@PASSWORD@")
 
 # Uncomment to enable debug messages
 mqttc.on_log = on_log
 mqttc.connect("localhost", 1883, 60)
 
-mqttc.loop_forever()
+mqttc.loop_forever() 
